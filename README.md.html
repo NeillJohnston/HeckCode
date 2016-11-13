@@ -519,7 +519,7 @@ pre.editor-colors .fold-marker:after,
 <li><code>-</code> Set the current cell to 0 (false).</li>
 <li><code>!</code> Flip the current cell value (cell = !cell).</li>
 <li><code>&amp;</code> Set the current cell to the logical value of (cell AND storage).</li>
-<li><code>.</code> Print the current cell.</li>
+<li><code>.</code> Print the current cell value.</li>
 <li><code>,</code> Ask for user input for the current cell.</li>
 </ul>
 <p>Sample code and code fragments:</p>
@@ -527,6 +527,6 @@ pre.editor-colors .fold-marker:after,
 <li><code>+-!&amp;</code> (Fragment) Copy the current cell into storage.</li>
 <li><code>!+!&amp;!</code> (Fragment) Compute the logical value of (cell OR storage).</li>
 <li><code>,&gt;,&lt;+-!&amp;&gt;&gt;+&lt;+-!&amp;&gt;!+!&amp;!&lt;&lt;+-!&amp;&gt;+&amp;!+&gt;&amp;.</code> Request user input for 2 values A and B, then output A xor B.</li>
-<li><code>.</code> etc.</li>
+<li><code>,&gt;,&lt;+-!&amp;&gt;&gt;+&lt;+-!&amp;&gt;&amp;.&lt;&lt;+-!&amp;&gt;&gt;&gt;+&lt;&lt;+-!&amp;&gt;&gt;!+!&amp;!&lt;&lt;&lt;+-!&amp;&gt;+&amp;!+&gt;&gt;&amp;.</code> Binary half-adder, requests two one-digit binary numbers then adds them.</li>
 </ul></body>
 </html>

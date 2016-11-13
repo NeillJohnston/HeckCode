@@ -21,11 +21,11 @@ Operators:
 + `-` Set the current cell to 0 (false).
 + `!` Flip the current cell value (cell = !cell).
 + `&` Set the current cell to the logical value of (cell AND storage).
-+ `.` Print the current cell.
++ `.` Print the current cell value.
 + `,` Ask for user input for the current cell.
 
 Sample code and code fragments:
 + `+-!&` (Fragment) Copy the current cell into storage.
 + `!+!&!` (Fragment) Compute the logical value of (cell OR storage).
 + `,>,<+-!&>>+<+-!&>!+!&!<<+-!&>+&!+>&.` Request user input for 2 values A and B, then output A xor B.
-+ `.` etc.
++ `,>,<+-!&>>+<+-!&>&.<<+-!&>>>+<<+-!&>>!+!&!<<<+-!&>+&!+>>&.` Binary half-adder, requests two one-digit binary numbers then adds them.
