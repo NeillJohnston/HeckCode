@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Heck</title>
+        <title>HeckCode</title>
         <link type="text/css" rel="stylesheet" href="style.css">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,12 +9,17 @@
     <body>
         <div id="code-block" class="half">
             <textarea id="code"></textarea>
-            <button onclick="run()">Run</button><br>
+            <button onclick="run()">Run</button> |
+            Output steps to console? <input type="checkbox" id="log">
+            <br>
             <textarea id="output" readonly></textarea>
         </div>
         <div id="about" class="half">
-            <h1>About HeckCode</h1>
-            <p>I wanted to make my own minimal language that was similar to Brainfuck. HeckCode just sounds more PG.</p>
+            <h1>HeckCode</h1>
+            <h2>About</h2>
+            <p>I wanted to make my own minimal language that was similar to Brainfuck. HeckCode just sounds more PG. <a href="README.md.html">Visit the readme for more info.</a></p>
+            <p>This language is intended as a joke and a fun side-project while I procrastinate on my homework. Don't try to program anything serious in HeckCode. Also, don't fall for my reverse psychology.</p>
+            <h2>Learn</h2>
             <ul>
                 <li>< move pointer to the left</li>
                 <li>> move pointer to the right</li>
@@ -25,6 +30,14 @@
                 <li>. output cell value</li>
                 <li>, set cell to user input</li>
             </ul>
+            <h2>Code Samples</h2>
+            <ul>
+                <li><span class="code">+-!&</span> Code fragment, copies current cell to storage.</li>
+                <li><span class="code">,>,<+-!&>>+<+-!&>!+!&!<<+-!&>+&!+>&.</span> Request user input for 2 values A and B, then output the logical value of A xor B.</li>
+            </ul>
+        </div>
+        <div id="bottom-banner">
+            <p>Created by Neill Johnston, 2016. | <a href="https://github.com/NeillJohnston/HeckCode">GitHub project page.</a></p>
         </div>
 
         <script type="text/javascript" src="heck.js"></script>

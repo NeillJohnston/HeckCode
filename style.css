@@ -1,13 +1,25 @@
+/* basic style */
 * {
     font-family: "Source Code Pro", monospace;
     margin: 0;
 }
 body {
-    background-color: #042024;
-    color: #FFFFFF;
+    background-color: #042030;
+    color: #FFF;
     padding: 0;
 }
 
+h1, h2, p, ul {
+    margin-bottom: 10px;
+}
+span.code {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+a {
+    color: #BBB;
+}
+
+/* div blocks */
 div.half {
     float: left;
     margin-left: 2%;
@@ -15,12 +27,24 @@ div.half {
     width: 47%;
 }
 div#code-block {
-    text-align: center;
+    text-align: left;
     padding: 0;
 }
+div#bottom-banner {
+    position: absolute;
+    width: 99%;
+    height: 4vh;
+    margin-top: 95vh;
+    padding-top: 1vh;
+    padding-right: 1%;
+    text-align: right;
+    background-color: rgba(0, 0, 0, 0.5);
+}
 
+/* code part of the screen */
 textarea {
-    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
     min-height: 400px;
 }
 textarea#output {

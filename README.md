@@ -24,6 +24,8 @@ Operators:
 + `.` Print the current cell.
 + `,` Ask for user input for the current cell.
 
-Sample code:
-+ `+-!&` Copy the current cell into storage.
-+ `!+!&!` Compute the logical value of (cell OR storage).
+Sample code and code fragments:
++ `+-!&` (Fragment) Copy the current cell into storage.
++ `!+!&!` (Fragment) Compute the logical value of (cell OR storage).
++ `,>,<+-!&>>+<+-!&>!+!&!<<+-!&>+&!+>&.` Request user input for 2 values A and B, then output A xor B.
++ `.` etc.
