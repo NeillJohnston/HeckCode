@@ -1,5 +1,7 @@
 # HeckCode
 
+[Try it!](https://neilljohnston.github.io/HeckCode/)
+
 ## About
 
 The programming language of the future Kappa.
