@@ -7,21 +7,25 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <textarea id="code"></textarea>
-        <textarea id="output" readonly></textarea>
-        <textarea id="input"></textarea><br>
-        <button onclick="run()">Run</button><br>
-        <h2>About HeckCode</h2>
-        <p>I wanted to make my own minimal language that was similar to Brainfuck. HeckCode just sounds more PG.</p>
-        <ul>
-            <li>< move pointer to the left</li>
-            <li>> move pointer to the right</li>
-            <li>+ swap cell and storage</li>
-            <li>- set cell to 0 (false)</li>
-            <li>! flip value of cell</li>
-            <li>& set cell to (cell AND storage)</li>
-            <li>. output cell value</li>
-            <li>, set cell to user input</li>
+        <div id="code-block" class="half">
+            <textarea id="code"></textarea>
+            <button onclick="run()">Run</button><br>
+            <textarea id="output" readonly></textarea>
+        </div>
+        <div id="about" class="half">
+            <h1>About HeckCode</h1>
+            <p>I wanted to make my own minimal language that was similar to Brainfuck. HeckCode just sounds more PG.</p>
+            <ul>
+                <li>< move pointer to the left</li>
+                <li>> move pointer to the right</li>
+                <li>+ swap cell and storage</li>
+                <li>- set cell to 0 (false)</li>
+                <li>! flip value of cell</li>
+                <li>& set cell to (cell AND storage)</li>
+                <li>. output cell value</li>
+                <li>, set cell to user input</li>
+            </ul>
+        </div>
 
         <script type="text/javascript" src="heck.js"></script>
     </body>
